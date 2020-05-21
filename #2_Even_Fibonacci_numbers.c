@@ -2,6 +2,7 @@
  * EJERCICIO RESUELTO POR: Nilzon Vela C.
  * FECHA: 19/05/2020
  * GITHUB: https://github.com/nilzoft/
+ * LINK PROBLEM: https://projecteuler.net/problem=2
  */
 
 #include <stdio.h>
