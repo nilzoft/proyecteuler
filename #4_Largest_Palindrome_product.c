@@ -7,12 +7,15 @@
 
 #include <stdio.h>
 #include <math.h>
+
 int rotateNum(int);
 int palindromoBig();
+
 int main() {
     printf("El palindromo es: %d", palindromoBig());
     return 0;
 }
+
 int rotateNum(int num) {
     int lenNum = (int) log10(num),
         newNum = 0, 
@@ -25,6 +28,7 @@ int rotateNum(int num) {
     }
     return newNum;
 }
+
 int palindromoBig() {
         int numOne = 999, 
             numTwo = 999,
@@ -34,7 +38,7 @@ int palindromoBig() {
         while (numOne > 99) {
             while (numAux > 99) {
                 mult = numOne * numAux;
-                if (mult == rotateNum(mult)){
+                if (mult == rotateNum(mult))
                     // max palindromo
                     maxPalindromo = mult > maxPalindromo ? mult : maxPalindromo;
                 --numAux;
