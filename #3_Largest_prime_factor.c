@@ -24,8 +24,8 @@ big factorPrimo(big num) {
     	if (num % alt == 0) {
      	     num /= alt;
 	     factor = alt;
-	}
-	alt++;
+	} else 
+	     alt++;
     }
     return factor;
 }
